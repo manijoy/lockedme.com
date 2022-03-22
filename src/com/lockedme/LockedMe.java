@@ -19,7 +19,8 @@ public class LockedMe {
     }
 
     private static final String WELCOME_SCREEN =
-            "*****************  LockedMe.com *******************"+
+            "\n*****************  LockedMe.com *******************\n"+
+                    "\n***************** This Application is developed by *******************\n"+
                     "***************** MANIKANTA TANGUDU *******************";{
                 System.out.println("\n*************************************************\n");
                     }
@@ -48,6 +49,7 @@ public class LockedMe {
                 case 1 : {
                     showFiles();
                     showPrimaryMenu();
+                    
                 }
                 case 2 : {
                     showSecondaryMenu();
@@ -103,7 +105,7 @@ public class LockedMe {
         String[] list = folder_name.list();
         for (String file: list) {
             if (filename.equals(file) && filepath.delete()) {
-                System.out.println("File " + filename + "successfully deleted from " + folder_name);
+                System.out.println("File " + filename + " successfully deleted from " + folder_name);
                 return;
             }
         }
